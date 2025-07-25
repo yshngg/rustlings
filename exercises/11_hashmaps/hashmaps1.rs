@@ -4,11 +4,15 @@
 // types of fruits (e.g. apple, banana, mango) in the basket and the total count
 // of all the fruits should be at least 5.
 
+use core::convert::Into;
 use std::collections::HashMap;
 
 fn fruit_basket() -> HashMap<String, u32> {
     // TODO: Declare the hash map.
-    // let mut basket =
+    let mut basket = HashMap::new();
+    basket.insert("apple".into(), 1);
+    basket.insert("orange".into(), 1);
+    basket.insert("mango".into(), 1);
 
     // Two bananas are already given for you :)
     basket.insert(String::from("banana"), 2);
